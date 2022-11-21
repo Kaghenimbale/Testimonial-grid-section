@@ -1,40 +1,220 @@
-body{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+
 }
-.container{
-    max-width: 1440px;
-    margin: 20px;
+
+body {
+    background-color: hsl(210, 46%, 95%);
+
 }
-.cards{
-    background-color: rgb(225, 225, 225);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    box-shadow:  20px 20px 5px 2px rgb(210, 210, 210);;
+.container {
+  max-width: 1440px;
+  margin: 20px;
 }
-.card-header{
-    
-    display: flex;
-    padding: 10px;
+.cards {
+  border-radius: 10px;
+  /* padding: 0px 20px 0 20px; */
+  margin: 10px 10px 30px 10px;
+  box-shadow: 10px 5px 25px 5px hsla(217, 19%, 35%, 0.151);
+  /* box-shadow: rgba(17, 12, 46, 0.2) 0px 48px 100px 0px; */
 }
-.image-card{
-    height: 100px;
-    width: 100px;
-    align-items: center;
-    justify-content: center;
+.card-header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0 0 20px;
 }
-.image-card img{
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
+.image-card {
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
 }
-.card-names{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 5px;
+
+.image {
+  border: 3px solid hsl(263, 83%, 72%);
 }
-.card-names h4{
-   color: hsl(0, 0%, 47%);
+
+.image-card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.card-names {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card1 {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.card2 {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.card3 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card4 {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.card5 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card1-header {
+  background: url("images/bg-pattern-quotation.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 210px 1px;
+  width: 100%;
+  padding: 20px;
+}
+
+.card2-header {
+  width: 100%;
+  padding: 20px;
+}
+
+.card3-header {
+  width: 100%;
+  padding: 20px;
+}
+
+.card4-header {
+  width: 100%;
+  padding: 20px;
+}
+
+.card5-header {
+  width: 100%;
+  padding: 20px;
+}
+
+.card1-text {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.7em;
+  padding: 0px 20px 0 20px;
+}
+
+.card2-text {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.7em;
+  padding: 0px 20px 0 20px;
+}
+
+.card3-text {
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+  font-size: 1.7em;
+  padding: 0px 20px 0 20px;
+}
+
+.card4-text {
+  color: white;
+  font-weight: 600;
+  font-size: 1.7em;
+  padding: 0px 20px 0 20px;
+}
+
+.card5-text {
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+  font-size: 1.7em;
+  padding: 0px 20px 0 20px;
+}
+
+.card-name1 {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+}
+
+.card-name2 {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.card-name3 {
+  color: hsl(217, 19%, 35%);
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.card-name4 {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.card-name5 {
+  color: hsl(217, 19%, 35%);
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.card1-verified {
+  color: hsl(263, 92%, 76%);
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.card2-verified {
+  color: hsl(0, 0%, 55%);
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.card3-verified {
+  color: hsl(0, 0%, 70%);
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.card4-verified {
+  color: hsl(215, 7%, 51%);
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.card5-verified {
+  color: hsl(0, 0%, 70%);
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.card1-text2 {
+  font-size: 1.1em;
+  color: hsl(263, 92%, 76%);
+  padding: 0 20px 20px 20px;
+  font-weight: 500;
+}
+.card2-text2 {
+  font-size: 1.1em;
+  color: hsl(0, 0%, 81%);
+  padding: 0 20px 20px 20px;
+  font-weight: 500;
+}
+.card3-text2 {
+  font-size: 1.1em;
+  color: hsl(0, 0%, 60%);
+  padding: 0 20px 20px 20px;
+  font-weight: 500;
+}
+.card4-text2 {
+  font-size: 1.1em;
+  color: hsl(0, 0%, 81%);
+  padding: 0 20px 20px 20px;
+  font-weight: 500;
+}
+.card5-text2 {
+  font-size: 1.1em;
+  color: hsl(0, 0%, 60%);
+  padding: 0 20px 20px 20px;
+  font-weight: 500;
 }
