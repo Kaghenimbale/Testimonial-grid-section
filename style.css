@@ -218,3 +218,36 @@ body {
   padding: 0 20px 20px 20px;
   font-weight: 500;
 }
+
+
+@media only screen and (min-width: 1000px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: auto;
+        grid-template-areas: 
+        'card1 card1 card2 card5'
+        'card3 card4 card4 card5'
+        ;
+        height: 100vh;
+    }
+    .cards{
+        overflow: hidden;
+    }
+    .card1{
+        grid-area: card1;
+    }
+    .card2{
+        grid-area: card2;
+    }
+    .card3{
+        grid-area: card3;
+    }
+    .card4{
+        grid-area: card4;
+    }
+    .card5{
+        grid-area: card5;
+    }
+}
